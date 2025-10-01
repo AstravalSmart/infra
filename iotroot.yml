@@ -8,7 +8,7 @@ services:
     environment:
       POSTGRES_USER: ietpsql
       POSTGRES_PASSWORD: ietlab25
-      POSTGRES_DB: iot_db
+      POSTGRES_DB: IeTRoot
     volumes:
       - pgdata:/var/lib/postgresql/data
     networks:
@@ -23,7 +23,7 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: ietmdb
       MONGO_INITDB_ROOT_PASSWORD: ietlab25
-      MONGO_INITDB_DATABASE: iot_db
+      MONGO_INITDB_DATABASE: IeTRoot
     volumes:
       - mongodata:/data/db
     networks:
